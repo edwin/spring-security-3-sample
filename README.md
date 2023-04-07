@@ -31,3 +31,9 @@ INSERT INTO db_test.t_user (id, username, passwd) VALUES ('29600983-2bc9-4630-86
 ## Version
 - Spring Boot 3.0.4
 - MySQL 8.0.17
+
+## Disclaimer
+```
+This code is provided "as is" without any guarantee whatsoever. 
+Feel free to fork, add, remove, change, or do whatever you want with it. 
+```
