@@ -28,6 +28,12 @@ create table db_test.t_user
 INSERT INTO db_test.t_user (id, username, passwd) VALUES ('29600983-2bc9-4630-860d-4b4a0ecdead4', 'user1', '$2a$12$/1UjYjP8xqWj1xGK7t8qfu.1i3zXuS.Jy1auazhHXeBCD6/ppkVrW');
 ```
 
+## User and Roles
+| Username | Password | Roles | Query | 
+|---------|----------|-------|-------|
+| admin1 | password | ADMIN | `select a1_0.id,a1_0.passwd,a1_0.username from t_admin a1_0 where a1_0.username=?`   | 
+| user1 | password | USER  | `select u1_0.id,u1_0.passwd,u1_0.username from t_user u1_0 where u1_0.username=?`   | 
+
 ## Version
 - Spring Boot 3.0.4
 - MySQL 8.0.17
